@@ -4,8 +4,8 @@ This simple script plays a short sound (included).
 
 **Synopsis**
 
-Sometimes it is useful to play a short sound to notify the user that 
-some process is over. For example, 
+Sometimes it is useful to play a short sound to notify us that 
+some long process is over. For example, 
 
 ```bash
   $ wget huge-file  && sound.sh
@@ -16,15 +16,29 @@ some process is over. For example,
   $ sound.sh
 ```
 
+**Installation**
+```bash
+  $ cd <wherever you like to install it>
+  $ git clone https://gitlab.com/maxim.leyenson/sound.sh
+  $ chmod a+x sound.sh/sound.sh
+```
+
+And check that sound.sh/sound.sh is in your $PATH.
 
 **Requirements**
 
 alsa-utils (for aplay).
 
-Say, in Fedora Linux you can get them with
+Say, in Fedora Linux you can install it with
 
 ```bash
  $ sudo dnf install -y alsa-utils 
+```
+
+and in Ubuntu with
+
+```bash
+ $ apt-get install -y alsa-utils 
 ```
 
 **Attributions**
