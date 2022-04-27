@@ -25,6 +25,21 @@ some long process is over. For example,
 
 And check that sound.sh/sound.sh is in your $PATH.
 
+For example, to install to the [opt folder](https://unix.stackexchange.com/questions/11544/what-is-the-difference-between-opt-and-usr-local):
+
+```bash
+$ cd /opt/
+$ sudo git clone https://gitlab.com/maxim.leyenson/sound.sh
+$ sudo chmod a+x sound.sh/sound.sh
+$ PATH=$PATH:/opt/sound.sh/
+$ export PATH
+```
+and add the line 
+```
+  PATH=$PATH:/opt/sound.sh/
+```
+to your .bashrc file.
+
 **Requirements**
 
 alsa-utils (for aplay).
