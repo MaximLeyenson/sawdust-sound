@@ -22,10 +22,10 @@ some long process is over. For example,
   $ git clone https://gitlab.com/maxim.leyenson/sound.sh
   $ chmod a+x sound.sh/sound.sh
 ```
-
 And check that sound.sh/sound.sh is in your $PATH.
 
-For example, to install to the [opt folder](https://unix.stackexchange.com/questions/11544/what-is-the-difference-between-opt-and-usr-local):
+For example, to install to the [opt folder](https://unix.stackexchange.com/questions/11544/what-is-the-difference-between-opt-and-usr-local)
+(so that all the users on this computers can use it):
 
 ```bash
 $ cd /opt/
@@ -34,13 +34,29 @@ $ sudo chmod a+x sound.sh/sound.sh
 $ PATH=$PATH:/opt/sound.sh/
 $ export PATH
 ```
-and add the line 
+and then add the line 
 ```
   PATH=$PATH:/opt/sound.sh/
 ```
 to your .bashrc file.
 
-**Requirements**
+To install just for yourself to your local bin folder:
+
+```bash
+$ mkdir -pv ~/bin
+$ cd ~/bin
+$ git clone https://gitlab.com/maxim.leyenson/sound.sh
+$ chmod a+x sound.sh/sound.sh
+
+```
+and then add the line 
+```
+  PATH=$PATH:/$HOME/bin/sound.sh/
+```
+to your .bashrc file.
+
+
+**Dependencies**
 
 alsa-utils (for aplay).
 
@@ -49,7 +65,6 @@ Say, in Fedora Linux you can install it with
 ```bash
  $ sudo dnf install -y alsa-utils 
 ```
-
 and in Ubuntu with
 
 ```bash
@@ -62,6 +77,6 @@ The excellent *sawdust* sound collection is  taken from the  Miranda
 project
  [*Opilki*](https://addons.miranda-ng.org/en/detail/3379).
  
-They are in the Public domain. Muranda project attributes them to the 
+They are in the Public domain. Miranda project attributes them to the 
 *rozbrat* user; i do not know his /her name, unfortunately.
 
