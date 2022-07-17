@@ -1,6 +1,6 @@
 # sound.sh
 
-This simple script plays a short sound (included).
+This simple script plays a short notification sound (included).
 
 **Synopsis**
 
@@ -19,39 +19,39 @@ some long process is over. For example,
 **Installation**
 ```bash
   $ cd <wherever you like to install it>
-  $ git clone https://gitlab.com/maxim.leyenson/sound.sh
+  $ git clone https://gitlab.com/maxim.leyenson/sawdust-sound.sh
   $ chmod a+x sound.sh/sound.sh
 ```
-And check that sound.sh/sound.sh is in your $PATH.
+And check that sawdust-sound/sound.sh is in your $PATH.
 
 For example, to install to the [opt folder](https://unix.stackexchange.com/questions/11544/what-is-the-difference-between-opt-and-usr-local)
-(so that all the users on this computers can use it):
+(so that all the users on the system can use it):
 
 ```bash
 $ cd /opt/
-$ sudo git clone https://gitlab.com/maxim.leyenson/sound.sh
-$ sudo chmod a+x sound.sh/sound.sh
-$ PATH=$PATH:/opt/sound.sh/
+$ sudo git clone https://gitlab.com/maxim.leyenson/sawdust-sound
+$ sudo chmod a+x sawdust-sound/sound.sh
+$ PATH=$PATH:/opt/sawdust-sound/
 $ export PATH
 ```
 and then add the line 
 ```
-  PATH=$PATH:/opt/sound.sh/
+  PATH=$PATH:/opt/sawdust-sound/
 ```
 to your .bashrc file.
 
-To install just for yourself to your local bin folder:
+To install to your local bin folder, just for yourself:
 
 ```bash
 $ mkdir -pv ~/bin
 $ cd ~/bin
-$ git clone https://gitlab.com/maxim.leyenson/sound.sh
-$ chmod a+x sound.sh/sound.sh
+$ git clone https://gitlab.com/maxim.leyenson/sawdust-sound
+$ chmod a+x sawdust-sound/sound.sh
 
 ```
 and then add the line 
 ```
-  PATH=$PATH:/$HOME/bin/sound.sh/
+  PATH=$PATH:/$HOME/bin/sawdust-sound/
 ```
 to your .bashrc file.
 
