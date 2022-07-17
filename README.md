@@ -19,8 +19,8 @@ some long process is over. For example,
 **Installation**
 ```bash
   $ cd <wherever you like to install it>
-  $ git clone https://gitlab.com/maxim.leyenson/sawdust-sound.sh
-  $ chmod a+x sound.sh/sound.sh
+  $ git clone https://gitlab.com/maxim.leyenson/sawdust-sound
+  $ chmod a+x sawdust-sound/sound.sh
 ```
 And check that sawdust-sound/sound.sh is in your $PATH.
 
